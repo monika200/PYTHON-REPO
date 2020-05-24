@@ -38,7 +38,14 @@ Que.4.
 
 import numpy as np
 a=np.arange(2,11).reshape(1,3,3)
-print(np.sum(a))
+b=np.arange(3,12).reshape(1,3,3)
+c=np.zeros((1,3,3))
+for i in range(len(a)):
+    for j in range(len(a[0])):
+        c[i][j] = a[i][j] + b[i][j]
+
+for k in c:
+    print(k)
 
 Que.5.
 
