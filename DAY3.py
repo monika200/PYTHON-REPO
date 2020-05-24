@@ -45,7 +45,7 @@ Que.5.
 n=int(input("Enter a no:"))
 result = 0
 for digit in str(n):
-    result += int(digit) ** 3
+    result += (int(digit) ** len(str(n)))
     if result == n:
         print(n,"is a narcissistic number")
         break
