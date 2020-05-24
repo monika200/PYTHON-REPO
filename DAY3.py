@@ -67,10 +67,9 @@ For example, 371 is a narcissistic number; it has three digits, and if we cube e
 
 n=int(input("Enter a no:"))
 sum = 0
-for digit in str(n):
-    sum += (int(digit) ** len(str(n)))
-    if sum == n:
-        print(n,"is a narcissistic number")
-        break
+for x in str(n):
+    sum += (int(x) ** len(str(n)))
+if sum == n:
+    print(n,"is a narcissistic number")
 else:
     print(n,"is not a narcissistic number")
