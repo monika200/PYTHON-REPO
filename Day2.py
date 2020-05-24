@@ -30,7 +30,11 @@ n=int(input("Enter a no:"))
 for i in range(1,11):
     print(n*i)
     
-    
+Que.4.
+
+def SumOddNumbers(n):
+  return n*n*n
+print(SumOddNumbers(4))
     
 Que:5.
 n=int(input("Enter a no:"))
