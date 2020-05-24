@@ -7,6 +7,9 @@ for i in list:
 print(square_list)
 
 
+--------------------------------------------------------------------------------------------------------------------------
+
+
 Que.2.From a list containing ints, strings and floats, make three lists to store them separately
 
 list = [1,3,5,"abc","are",1.24,2.56,"the","4",3.76]
@@ -24,7 +27,7 @@ print(string_list)
 print(interger_list)
 print(floats_list)  
 
-
+-------------------------------------------------------------------------------------------------------------------------
 
 Que.3.Print the pattern
 1
@@ -39,6 +42,9 @@ for i in range(1,n+1):
     for j in range(1,i+1):
         print(j,end=" ")
     print()
+
+---------------------------------------------------------------------------------------------------------------------------    
+    
     
 Que.4.Accept data in two 3*3  matrix and calculate the sum of the matrices.
 
@@ -53,6 +59,9 @@ for i in range(len(a)):
 for k in c:
     print(k)
 
+    
+-------------------------------------------------------------------------------------------------------------------------    
+    
 Que.5.Write a Python program to check whether a given number is a narcissistic number or not
 For example, 371 is a narcissistic number; it has three digits, and if we cube each digits  33 + 73 + 13 the sum is 371. 
 
