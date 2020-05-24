@@ -43,10 +43,10 @@ print(np.sum(a))
 Que.5.
 
 n=int(input("Enter a no:"))
-result = 0
+sum = 0
 for digit in str(n):
-    result += (int(digit) ** len(str(n)))
-    if result == n:
+    sum += (int(digit) ** len(str(n)))
+    if sum == n:
         print(n,"is a narcissistic number")
         break
 else:
