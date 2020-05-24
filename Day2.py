@@ -1,3 +1,4 @@
+
 Que:1.
 n=int(input("Enter a no:"))
 sum=0
