@@ -48,15 +48,14 @@ for i in range(1,n+1):
     
 Que.4.Accept data in two 3*3  matrix and calculate the sum of the matrices.
 
-import numpy as np
-a=np.arange(2,11).reshape(1,3,3)
-b=np.arange(3,12).reshape(1,3,3)
-c=np.zeros((1,3,3))
-for i in range(len(a)):
-    for j in range(len(a[0])):
-        c[i][j] = a[i][j] + b[i][j]
+x=[[1,2,3],[4,5,6],[7,8,9]]
+y=[[10,11,12],[13,14,15],[16,17,18]]
+z=[[0,0,0],[0,0,0],[0,0,0]]
+for i in range(len(x)):
+    for j in range(len(x[0])):
+        z[i][j] = x[i][j] + y[i][j]
 
-for k in c:
+for k in z:
     print(k)
 
     
