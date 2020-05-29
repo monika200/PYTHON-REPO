@@ -1,7 +1,9 @@
 1.	Write a program to implement Constructor with Variable Number of Arguments.
 
-
-
+def Constructor(*args):  
+    for arg in args:  
+        print (arg) 
+myFun("Hello","How","are","you")  
 
 2. Create a menu driven program for library management. It will include 6 options :-
     1 - student registration
@@ -19,10 +21,60 @@ Library class will have methods displayAllBooks, lendBook,addNewBook
 
 3.	Write a program to implement multiple inheritance.
 
+class Personel:
+    def __init__(self):
+        self.id=0
+        self.name=""
+        self.gender=""
+    def setPersonel(self):
+        self.id=int(input("Enter Id: "))
+        self.name = input("Enter Name: ")
+        self.gender = input("Enter Gender: ")
+    def showPersonel(self):
+        print("Id: ",self.id)
+        print("Name: ",self.name)
+        print("Gender: ",self.gender)
 
+class Educational:
+    def __init__(self):
+        self.stream=""
+        self.year=""
+    def setEducational(self):
+        self.stream=input("Enter Stream: ")
+        self.year = input("Enter Year: ")
+    def showEducational(self):
+        print("Stream: ",self.stream)
+        print("Year: ",self.year)
+
+class Student(Personel,Educational):
+    def __init__(self):
+        self.address = ""
+        self.contact = ""
+    def setStudent(self):
+        self.setPersonel()
+        self.address = input("Enter Address: ")
+        self.contact = input("Enter Contact: ")
+        self.setEducational()
+
+    def showStudent(self):
+        self.showPersonel()
+        print("Address: ",self.address)
+        print("Contact: ",self.contact)
+        self.showEducational()
+
+s=Student()
+s.setStudent()
+s.showStudent()
 
 4.	Write a program to implement operator overloading in python.
 
 
 
 5.	 Write a Python program to square and cube every number in a given list of integers using Lambda. 
+
+
+List = [2, 3, 4, 5, 6, 7, 8]
+sq = list(map(lambda x: x ** 2, List))
+print(sq)
+cube = list(map(lambda x: x ** 3, List))
+print(cube)
