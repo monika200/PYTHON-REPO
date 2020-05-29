@@ -1,0 +1,28 @@
+1.	Write a program to implement Constructor with Variable Number of Arguments.
+
+
+
+
+2. Create a menu driven program for library management. It will include 6 options :-
+    1 - student registration
+    2 - lend book to student
+    3 - return book to library
+    4 - display available books
+    5 - display all books issued to students
+    6 - exit
+We will have 2 classes, i.e student and library. These class will have following mandatory methods. 
+Student class will have methods registration, requestBook and returnBook
+Library class will have methods displayAllBooks, lendBook,addNewBook
+(If required, you can write additional methods as well.).
+
+
+
+3.	Write a program to implement multiple inheritance.
+
+
+
+4.	Write a program to implement operator overloading in python.
+
+
+
+5.	 Write a Python program to square and cube every number in a given list of integers using Lambda. 
