@@ -1,74 +1,44 @@
 1.	Write a program to implement Constructor with Variable Number of Arguments.
 
-def Constructor(*args):  
-    for arg in args:  
-        print (arg) 
-myFun("Hello","How","are","you")  
-
-2. Create a menu driven program for library management. It will include 6 options :-
-    1 - student registration
-    2 - lend book to student
-    3 - return book to library
-    4 - display available books
-    5 - display all books issued to students
-    6 - exit
-We will have 2 classes, i.e student and library. These class will have following mandatory methods. 
-Student class will have methods registration, requestBook and returnBook
-Library class will have methods displayAllBooks, lendBook,addNewBook
-(If required, you can write additional methods as well.).
+class Sum:
+    def __init__(self,*args):
+        print("sum of numbers is",sum(args))
+a=Sum(1)
+b=Sum(1,2)
+c=Sum(1,2,3)
+d=Sum(1,2,3,4)
+e=Sum(1,2,3,4,5)
 
 
 
 3.	Write a program to implement multiple inheritance.
 
-class Personel:
-    def __init__(self):
-        self.id=0
-        self.name=""
-        self.gender=""
-    def setPersonel(self):
-        self.id=int(input("Enter Id: "))
-        self.name = input("Enter Name: ")
-        self.gender = input("Enter Gender: ")
-    def showPersonel(self):
-        print("Id: ",self.id)
-        print("Name: ",self.name)
-        print("Gender: ",self.gender)
+class Parent1:
+    def Sum(self,a=10,b=20):
+        print("Parent1 method",a+b)
 
-class Educational:
-    def __init__(self):
-        self.stream=""
-        self.year=""
-    def setEducational(self):
-        self.stream=input("Enter Stream: ")
-        self.year = input("Enter Year: ")
-    def showEducational(self):
-        print("Stream: ",self.stream)
-        print("Year: ",self.year)
+class Parent2:
+    def Sum(self,a=20,b=30):
+        print("Parent2 method",a*b)
+class Child(Parent1,Parent2):
+    pass
 
-class Student(Personel,Educational):
-    def __init__(self):
-        self.address = ""
-        self.contact = ""
-    def setStudent(self):
-        self.setPersonel()
-        self.address = input("Enter Address: ")
-        self.contact = input("Enter Contact: ")
-        self.setEducational()
-
-    def showStudent(self):
-        self.showPersonel()
-        print("Address: ",self.address)
-        print("Contact: ",self.contact)
-        self.showEducational()
-
-s=Student()
-s.setStudent()
-s.showStudent()
+c=Child()
+c.Sum()
 
 4.	Write a program to implement operator overloading in python.
 
+class Addition:
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+    def Sum(self):
+        print("The addition of:",self.a+self.b)
 
+a=Addition(50,70)
+a.Sum()
+a1=Addition("Hello","World")
+a1.Sum()
 
 5.	 Write a Python program to square and cube every number in a given list of integers using Lambda. 
 
