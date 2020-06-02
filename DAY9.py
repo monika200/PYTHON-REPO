@@ -1,4 +1,4 @@
-1.	Write a function to compute divide by zero and use try/except to catch the exceptions.
+1.Write a function to compute divide by zero and use try/except to catch the exceptions.
 
 try:
     x=int(input("Enter first number:"))
@@ -12,7 +12,7 @@ else:
 finally:
     print("Finally executed")
     
-2.	Write python program to check  that given number is valid mobile number or not?
+2.Write python program to check  that given number is valid mobile number or not?
 
 import re
 a=input("Enter mobile number:")
@@ -23,7 +23,7 @@ if b!=None:
 else:
     print("Invalid mobile number")
     
-3.	Write python program to check  that given email address is valid   or not?
+3.Write python program to check  that given email address is valid   or not?
 
 import re
 a=input("Enter your email address:")
@@ -33,7 +33,7 @@ if a!=None:
 else:
     print("Invalid email address")
     
-4.	Write a python program to check given car registration number is valid Maharashtra state registration number or not?
+4.Write a python program to check given car registration number is valid Maharashtra state registration number or not?
 
 import re
 a=input("Enter your email address:")
@@ -43,7 +43,7 @@ if a!=None:
 else:
     print("Invalid vehicle number")
     
-5.	Write a python program to decorate arithmetic operations.
+5.Write a python program to decorate arithmetic operations.
 
 def arithmetic_operation():
     def operators(a,b):
@@ -59,7 +59,7 @@ def add_subtract(a,b):
     print("The sutraction is:",a-b)
 add_subtract(50,60)
 
-6.	Write a python program to generate Fibonacci Numbers upto 100 using generator. 
+6.Write a python program to generate Fibonacci Numbers upto 100 using generator. 
 
 def fibonacci():
     a,b=0,1
