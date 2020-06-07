@@ -16,7 +16,7 @@ class BankAccount:
         self.balance += amount
 
     def withdraw(self, amount):
-        if amount > self.balance:
+        if amount >= self.balance:
             print("funds not available")
         self.balance -= amount
 
