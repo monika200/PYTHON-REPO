@@ -45,7 +45,7 @@ else:
     
 5.Write a python program to decorate arithmetic operations.
 
-def arithmetic_operation():
+def arithmetic_operation(func):
     def operators(a,b):
         (a,b)
         print("The product is:",a*b)
@@ -53,7 +53,7 @@ def arithmetic_operation():
         print("The remainder is:",a%b)
     return operators
 print("This is a decorator")
-@arithmetic_oprations
+@arithmetic_operation
 def add_subtract(a,b):
     print("The addition is:",a+b)
     print("The sutraction is:",a-b)
